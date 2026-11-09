@@ -14,13 +14,22 @@ import java.util.ResourceBundle;
  * @author 2007r
  */
 public class Idioma {
-    public static final Locale LOCALE = new Locale("ca", "ES");
+
+    public static final Locale LOCALE = Locale.of("ca", "ES");
     private static final ResourceBundle BUNDLE =
             ResourceBundle.getBundle("Bundle", LOCALE);
 
     private Idioma() { }
 
     public static String get(String clau) {
+        return llegir(clau);
+    }
+
+    public static String get(String clau, Object... params) {
+        return MessageFormat.format(llegir(clau), params);
+    }
+
+    private static String llegir(String clau) {
         try {
             return BUNDLE.getString(clau);
         } catch (MissingResourceException e) {
