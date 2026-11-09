@@ -18,6 +18,8 @@ import javax.swing.ListSelectionModel;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import com.paucasesnovescifp.tasca01_dvi.model.Joc;
+import com.paucasesnovescifp.tasca01_dvi.model.Usuari;
 
 /**
  *
@@ -234,7 +236,11 @@ public class FinestraPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void itemRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRegistrarActionPerformed
-        // TODO add your handling code here:
+        Lloguer seleccionat = getLloguerSeleccionat();
+        Usuari usuari = seleccionat == null ? null : seleccionat.getUsuari();
+        Joc joc = seleccionat == null ? null : seleccionat.getJoc();
+        new DialegRegistrarLloguer(this, true, gestor, usuari, joc).setVisible(true);
+        refrescarTaula();
     }//GEN-LAST:event_itemRegistrarActionPerformed
 
     private void itemTornarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemTornarActionPerformed
