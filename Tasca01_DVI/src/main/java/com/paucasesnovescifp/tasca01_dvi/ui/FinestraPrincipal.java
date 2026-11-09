@@ -203,6 +203,7 @@ public class FinestraPrincipal extends javax.swing.JFrame {
         menuJoc.add(itemCrearJoc);
 
         itemBorrarJoc.setText("Borrar Joc");
+        itemBorrarJoc.addActionListener(this::itemBorrarJocActionPerformed);
         menuJoc.add(itemBorrarJoc);
 
         jMenuBar1.add(menuJoc);
@@ -260,6 +261,11 @@ public class FinestraPrincipal extends javax.swing.JFrame {
     private void itemCrearJocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCrearJocActionPerformed
         new DialegCrearJoc(this, true, gestor).setVisible(true);
     }//GEN-LAST:event_itemCrearJocActionPerformed
+
+    private void itemBorrarJocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemBorrarJocActionPerformed
+        new DialegBorrarJoc(this, true, gestor).setVisible(true);
+        refrescarTaula();
+    }//GEN-LAST:event_itemBorrarJocActionPerformed
 
     /**
      * @param args the command line arguments
