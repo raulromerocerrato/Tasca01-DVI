@@ -339,6 +339,10 @@ public class DialegRegistrarLloguer extends javax.swing.JDialog {
     }//GEN-LAST:event_comboJocActionPerformed
 
     private void botoCancellarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoCancellarActionPerformed
+        dispose();
+    }//GEN-LAST:event_botoCancellarActionPerformed
+
+    private void botoConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoConfirmarActionPerformed
         int iu = comboUsuari.getSelectedIndex();
         int ij = comboJoc.getSelectedIndex();
 
@@ -360,10 +364,6 @@ public class DialegRegistrarLloguer extends javax.swing.JDialog {
             mostrarError(Idioma.get(ex.getMessage()));
             actualitzarPlataformes(); // l'estoc pot haver canviat
         }
-    }//GEN-LAST:event_botoCancellarActionPerformed
-
-    private void botoConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoConfirmarActionPerformed
-        dispose();
     }//GEN-LAST:event_botoConfirmarActionPerformed
 
 
