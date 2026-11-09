@@ -31,7 +31,7 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
         aplicarTextos();
         campDataRegistre.setText(
                 LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-        campDataRegistre.setEnabled(false); // assignada automàticament
+        campDataRegistre.setEnabled(false);
         getRootPane().setDefaultButton(botoConfirmar);
         setLocationRelativeTo(parent);
     }
@@ -93,6 +93,7 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
 
         botoCancellar.setBackground(new java.awt.Color(255, 0, 0));
         botoCancellar.setText("jButton2");
+        botoCancellar.addActionListener(this::botoCancellarActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -191,7 +192,7 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, errors.toString(),
                     Idioma.get("titol.error"), JOptionPane.ERROR_MESSAGE);
             primerError.requestFocus();
-            return; // no es desa res
+            return;
         }
 
         gestor.afegirUsuari(new Usuari(nom, llinatge1, llinatge2,
@@ -200,12 +201,6 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
                 Idioma.get("titol.informacio"), JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }
-
-    private void botoCancellarActionPerformed(java.awt.event.ActionEvent evt) {
-        dispose();
-    }
-
-    /** Afegeix l'error (si n'hi ha) i retorna el primer camp amb error. */
     private JTextField comprovar(StringBuilder errors, JTextField primer,
             JTextField camp, String clauEtiqueta, String clauError) {
         if (clauError == null) return primer;
@@ -213,6 +208,10 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
               .append(": ").append(Idioma.get(clauError)).append("\n");
         return primer == null ? camp : primer;
     }//GEN-LAST:event_botoConfirmarActionPerformed
+
+    private void botoCancellarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoCancellarActionPerformed
+        dispose();
+    }//GEN-LAST:event_botoCancellarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
