@@ -77,13 +77,25 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
 
         etiquetaNom.setText("jLabel1");
 
+        campNom.setColumns(10);
+
+        campLlinatge2.setColumns(10);
+
         etiquetaLlinatge2.setText("jLabel1");
+
+        campDni.setColumns(10);
 
         etiquetaDni.setText("jLabel1");
 
+        campTelefon.setColumns(10);
+
         etiquetaTelefon.setText("jLabel1");
 
+        campLlinatge1.setColumns(10);
+
         etiquetaLlinatge1.setText("jLabel1");
+
+        campDataRegistre.setColumns(10);
 
         etiquetaDataRegistre.setText("jLabel1");
 
@@ -106,13 +118,13 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
                     .addComponent(etiquetaNom)
                     .addComponent(etiquetaDni)
                     .addComponent(campDni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(etiquetaLlinatge1)
                     .addComponent(campLlinatge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(etiquetaTelefon)
                     .addComponent(campTelefon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70)
+                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(etiquetaDataRegistre)
                     .addComponent(campDataRegistre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)

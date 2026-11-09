@@ -32,14 +32,14 @@
                   <Component id="etiquetaDni" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="campDni" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="78" max="32767" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="etiquetaLlinatge1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="campLlinatge1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="etiquetaTelefon" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="campTelefon" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="etiquetaDataRegistre" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="campDataRegistre" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -113,8 +113,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campNom">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campLlinatge2">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="etiquetaLlinatge2">
       <Properties>
@@ -122,6 +128,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campDni">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="etiquetaDni">
       <Properties>
@@ -129,6 +138,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campTelefon">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="etiquetaTelefon">
       <Properties>
@@ -136,6 +148,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campLlinatge1">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="etiquetaLlinatge1">
       <Properties>
@@ -143,6 +158,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="campDataRegistre">
+      <Properties>
+        <Property name="columns" type="int" value="10"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="etiquetaDataRegistre">
       <Properties>

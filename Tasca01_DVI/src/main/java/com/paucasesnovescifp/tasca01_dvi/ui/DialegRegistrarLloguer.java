@@ -167,6 +167,8 @@ public class DialegRegistrarLloguer extends javax.swing.JDialog {
 
         etiquetaRegistre.setText("jLabel1");
 
+        campRegistre.setColumns(10);
+
         etiquetaUsuari.setText("jLabel1");
 
         comboUsuari.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -178,8 +180,11 @@ public class DialegRegistrarLloguer extends javax.swing.JDialog {
 
         etiquetaDataInici.setText("jLabel1");
 
+        campDataInici.setColumns(10);
+
         etiquetaDataTornada.setText("jLabel1");
 
+        campDataTornada.setColumns(10);
         campDataTornada.addActionListener(this::campDataTornadaActionPerformed);
 
         grupPlataforma.add(radioPS5);
@@ -277,7 +282,7 @@ public class DialegRegistrarLloguer extends javax.swing.JDialog {
                     .addComponent(campDataInici, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(campDataTornada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(etiquetaDataTornada))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panellPlataforma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
