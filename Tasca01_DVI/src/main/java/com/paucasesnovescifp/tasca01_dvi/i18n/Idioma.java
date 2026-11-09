@@ -16,7 +16,7 @@ import java.util.ResourceBundle;
 public class Idioma {
     public static final Locale LOCALE = new Locale("ca", "ES");
     private static final ResourceBundle BUNDLE =
-            ResourceBundle.getBundle("resources.Bundle", LOCALE);
+            ResourceBundle.getBundle("Bundle", LOCALE);
 
     private Idioma() { }
 
