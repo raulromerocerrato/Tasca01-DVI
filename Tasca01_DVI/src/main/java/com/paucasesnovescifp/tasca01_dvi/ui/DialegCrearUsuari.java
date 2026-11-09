@@ -87,9 +87,11 @@ public class DialegCrearUsuari extends javax.swing.JDialog {
 
         etiquetaDataRegistre.setText("jLabel1");
 
+        botoConfirmar.setBackground(new java.awt.Color(51, 255, 51));
         botoConfirmar.setText("jButton1");
         botoConfirmar.addActionListener(this::botoConfirmarActionPerformed);
 
+        botoCancellar.setBackground(new java.awt.Color(255, 0, 0));
         botoCancellar.setText("jButton2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
