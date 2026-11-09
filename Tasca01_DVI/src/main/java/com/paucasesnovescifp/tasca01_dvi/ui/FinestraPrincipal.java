@@ -246,7 +246,7 @@ public class FinestraPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_itemBorrarUsuariActionPerformed
 
     private void itemCrearUsuariActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCrearUsuariActionPerformed
-        // TODO add your handling code here:
+        new DialegCrearUsuari(this, true, gestor).setVisible(true);
     }//GEN-LAST:event_itemCrearUsuariActionPerformed
 
     private void itemCrearJocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCrearJocActionPerformed
